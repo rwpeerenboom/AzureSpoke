@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_scope">
+    <oauth_entity_scope action="INSERT_OR_UPDATE">
+        <name>authcode</name>
+        <oauth_entity display_value="Azure SC Lab">c2453512dbe5b7800be69ee6db96199e</oauth_entity>
+        <oauth_entity_scope>offline_access</oauth_entity_scope>
+        <sys_class_name>oauth_entity_scope</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-28 17:28:55</sys_created_on>
+        <sys_id>0437a808dbb533c00be69ee6db961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>authcode</sys_name>
+        <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
+        <sys_update_name>oauth_entity_scope_0437a808dbb533c00be69ee6db961927</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-28 17:28:55</sys_updated_on>
+    </oauth_entity_scope>
+</record_update>

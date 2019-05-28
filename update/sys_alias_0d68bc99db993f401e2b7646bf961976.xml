@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_alias">
+    <sys_alias action="INSERT_OR_UPDATE">
+        <connection_type>http_connection</connection_type>
+        <id>x_snc_azure_resour.AzureMgmtAPI</id>
+        <multiple_connections>false</multiple_connections>
+        <name>AzureMgmtAPI</name>
+        <sys_class_name>sys_alias</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-07 19:25:18</sys_created_on>
+        <sys_id>0d68bc99db993f401e2b7646bf961976</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_snc_azure_resour.AzureMgmtAPI</sys_name>
+        <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
+        <sys_update_name>sys_alias_0d68bc99db993f401e2b7646bf961976</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-07 19:25:18</sys_updated_on>
+        <type>connection</type>
+    </sys_alias>
+</record_update>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="oauth_entity_profile_scope">
+    <oauth_entity_profile_scope action="INSERT_OR_UPDATE">
+        <oauth_entity_profile display_value="Azure SC Lab default_profile">d746f152dbe5b7800be69ee6db961927</oauth_entity_profile>
+        <oauth_entity_scope display_value="authcode">0437a808dbb533c00be69ee6db961927</oauth_entity_scope>
+        <sys_class_name>oauth_entity_profile_scope</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-28 17:29:41</sys_created_on>
+        <sys_id>a1772048dbb533c00be69ee6db96196c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d746f152dbe5b7800be69ee6db961927</sys_name>
+        <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
+        <sys_update_name>oauth_entity_profile_scope_a1772048dbb533c00be69ee6db96196c</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-28 17:29:41</sys_updated_on>
+    </oauth_entity_profile_scope>
+</record_update>
