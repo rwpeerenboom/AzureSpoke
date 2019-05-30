@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <annotation/>
+        <category display_value="Virtual Networks">1e5e104cdb7533c00be69ee6db9619be</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_vnet_peering</internal_name>
+        <label_cache>[{"name":"{{action.vnet}}","label":"action➛vnet","type":"action","ref":""},{"name":"{{action.peer_name}}","label":"action➛peer_name","type":"action","ref":""},{"name":"{{action.vnet1}}","label":"action➛vnet1","type":"action","ref":"cmdb_ci_network"},{"name":"{{action.vnet2}}","label":"action➛vnet2","type":"action","ref":"cmdb_ci_network"},{"name":"{{action.vnet1.object_id}}","label":"action➛vnet1➛Object ID","type":"action","ref":""},{"name":"{{action.vnet2.object_id}}","label":"action➛vnet2➛Object ID","type":"action","ref":""},{"name":"{{action.oauthtoken}}","label":"action➛oauthtoken","type":"action","ref":""},{"name":"{{step[502b9189-121a-4fa5-b3b1-3e45846a2ade].response_body}}","label":"step➛Create Peering➛Response Body","type":"step","ref":""},{"name":"{{step[502b9189-121a-4fa5-b3b1-3e45846a2ade].status_code}}","label":"step➛Create Peering➛Status Code","type":"step","ref":""},{"name":"{{step[502b9189-121a-4fa5-b3b1-3e45846a2ade].error_message}}","label":"step➛Create Peering➛Error Message","type":"step","ref":""},{"name":"{{step[502b9189-121a-4fa5-b3b1-3e45846a2ade].error_code}}","label":"step➛Create Peering➛Error Code","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].s}}","label":"step➛Handle Response➛s","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].st}}","label":"step➛Handle Response➛st","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].sta}}","label":"step➛Handle Response➛sta","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].stat}}","label":"step➛Handle Response➛stat","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].statu}}","label":"step➛Handle Response➛statu","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].status}}","label":"step➛Handle Response➛status","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].e}}","label":"step➛Handle Response➛e","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].er}}","label":"step➛Handle Response➛er","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].err}}","label":"step➛Handle Response➛err","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].erro}}","label":"step➛Handle Response➛erro","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].error}}","label":"step➛Handle Response➛error","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].errorM}}","label":"step➛Handle Response➛errorM","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].errorMe}}","label":"step➛Handle Response➛errorMe","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].errorMes}}","label":"step➛Handle Response➛errorMes","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].errorMess}}","label":"step➛Handle Response➛errorMess","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].errorMessa}}","label":"step➛Handle Response➛errorMessa","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].errorMessag}}","label":"step➛Handle Response➛errorMessag","type":"step","ref":""},{"name":"{{step[4538790f-94ba-486c-bfb3-d153cc92f170].errorMessage}}","label":"step➛Handle Response➛errorMessage","type":"step","ref":""},{"name":"{{step[f07a8c50-fcdd-40db-ae77-bd6217bba9d7].path}}","label":"step➛Build resource path➛path","type":"step","ref":""},{"name":"{{step[da4a1ca2-ceb7-481d-839d-2ac24cbd8b2f].payload}}","label":"step➛Build payload➛payload","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Create VNet Peering</name>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Create VNet Peering">9bc78d40db7933c00be69ee6db9619b2</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-30 13:21:39</sys_created_on>
+        <sys_id>01e18a28dbf5f3c00be69ee6db961992</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Create VNet Peering</sys_name>
+        <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_01e18a28dbf5f3c00be69ee6db961992</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-30 13:32:23</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=01e18a28dbf5f3c00be69ee6db961992"/>
+    <sys_variable_value action="delete_multiple" query="document_key=01e18a28dbf5f3c00be69ee6db961992"/>
+    <sys_element_mapping action="delete_multiple" query="id=01e18a28dbf5f3c00be69ee6db961992"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>errormessage</field>
+        <id>01e18a28dbf5f3c00be69ee6db961992</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-30 13:21:46</sys_created_on>
+        <sys_id>8be1ca28dbf5f3c00be69ee6db9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-30 13:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01e18a28dbf5f3c00be69ee6db961992</table>
+        <value>{{step[4538790f-94ba-486c-bfb3-d153cc92f170].errorMessage}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>01e18a28dbf5f3c00be69ee6db961992</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-30 13:21:46</sys_created_on>
+        <sys_id>4fe1ca28dbf5f3c00be69ee6db9619df</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-30 13:21:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_01e18a28dbf5f3c00be69ee6db961992</table>
+        <value>{{step[4538790f-94ba-486c-bfb3-d153cc92f170].status}}</value>
+    </sys_element_mapping>
+</record_update>

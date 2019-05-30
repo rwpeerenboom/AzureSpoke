@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="vnet1" label="vnet1" language="en" table="var__m_sys_hub_action_input_d64a8ee4db39f3c00be69ee6db961955">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>vnet1</element>
+            <help/>
+            <hint/>
+            <label>vnet1</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_d64a8ee4db39f3c00be69ee6db961955</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>nick.ryan</sys_created_by>
+            <sys_created_on>2019-05-30 13:58:19</sys_created_on>
+            <sys_id>124a8ee4db39f3c00be69ee6db961964</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>vnet1</sys_name>
+            <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_d64a8ee4db39f3c00be69ee6db961955_vnet1_en</sys_update_name>
+            <sys_updated_by>nick.ryan</sys_updated_by>
+            <sys_updated_on>2019-05-30 13:58:19</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

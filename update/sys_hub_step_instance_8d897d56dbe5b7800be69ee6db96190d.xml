@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance">
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="GetAzAuthorization">7c6875d2dbe5b7800be69ee6db96191a</action>
+        <action display_value="Get OAuth Token">7c6875d2dbe5b7800be69ee6db96191a</action>
         <cid>eb92ffab-0163-4270-8b88-9b0a17cb1bd7</cid>
+        <extended_inputs/>
         <extended_inputs/>
         <extended_outputs/>
         <icon/>
@@ -14,14 +15,14 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-23 12:58:43</sys_created_on>
         <sys_id>8d897d56dbe5b7800be69ee6db96190d</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>16</sys_mod_count>
         <sys_name>Request Token</sys_name>
         <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
         <sys_policy/>
         <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
         <sys_update_name>sys_hub_step_instance_8d897d56dbe5b7800be69ee6db96190d</sys_update_name>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-28 16:46:20</sys_updated_on>
+        <sys_updated_on>2019-05-30 13:19:02</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=8d897d56dbe5b7800be69ee6db96190d"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -46,27 +47,75 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-23 12:58:44</sys_created_on>
         <sys_id>9d897d56dbe5b7800be69ee6db961926</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-28 16:46:21</sys_updated_on>
+        <sys_updated_on>2019-05-30 13:19:02</sys_updated_on>
         <value>(function execute(inputs, outputs) {
-	// var oAuthClient = new sn_auth.GlideOAuthClient();
-  	// var params = {grant_type:"client_credentials",resource:"https://management.azure.com/"};
-  	// var tokenResponse = oAuthClient.requestToken('Azure SC Lab',global.JSON.stringify(params));
-  	// var token = tokenResponse.getToken();
-  	// var r = new sn_ws.RESTMessageV2();
-  	// r.setRequestHeader('Authorization','Bearer ' + token.getAccessToken());
-  
-  	var client = new sn_auth.GlideOAuthClient();
-  	var params = {};
-    params.grant_type = "client_credentials";
-    //params.resource = inputs.resource;
-  	params.resource = "https://management.azure.com/";
-    //var response = client.requestToken(inputs.oauthProviderName,global.JSON.stringify(params));
-  	var response = client.requestToken('Azure SC Lab',global.JSON.stringify(params));
-    outputs.oauthToken = "Bearer " + response.getToken().getAccessToken();
+  	// query for http_connection to get 'resource' URL - associated with x_snc_azure_resour.AzureMgmtAPI
+  	var query = 'connection_alias.sys_name=x_snc_azure_resour.AzureMgmtAPI';
+  	var gr = new GlideRecord('http_connection');
+  	gr.addEncodedQuery(query);
+  	gr.query();
+  	if (gr.next()){
+      	var conn_url = gr.connection_url;
+  		var client = new sn_auth.GlideOAuthClient();
+  		var params = {};
+    	params.grant_type = "client_credentials";
+  		params.resource = conn_url + '/'; // e.g. https://management.azure.com/ - must have '/' at end
+      	// Request the token 
+    	var response = client.requestToken(inputs.app_reg, global.JSON.stringify(params));
+      	var message = response.getBody();
+      	if (response.getResponseCode() &gt;= 400) {
+      		outputs.status = 'Failed';
+        } else {
+          	outputs.status = 'Success';
+    		outputs.oauthToken = "Bearer " + response.getToken().getAccessToken();
+        }
+      	outputs.message = message;
+    } else {
+      	gs.info("*** No connection for AzureMgmtAPI alias");
+      	outputs.status = 'Failed';
+      	outputs.message = 'No connection for AzureMgmtAPI alias';
+    }
 })(inputs, outputs);
 </value>
         <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
     </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=8d897d56dbe5b7800be69ee6db96190d"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>8d897d56dbe5b7800be69ee6db96190d</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-23 12:58:44</sys_created_on>
+        <sys_id>59897d56dbe5b7800be69ee6db961925</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-23 12:58:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>app_reg</field>
+        <id>8d897d56dbe5b7800be69ee6db96190d</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-28 19:31:17</sys_created_on>
+        <sys_id>5453010cdb3933c00be69ee6db9619d0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-30 13:09:43</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_8d897d56dbe5b7800be69ee6db96190d</table>
+        <value>{{action.application_registry.sys_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>8d897d56dbe5b7800be69ee6db96190d</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-23 12:58:44</sys_created_on>
+        <sys_id>91897d56dbe5b7800be69ee6db961926</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-23 12:58:44</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
 </record_update>

@@ -40,7 +40,7 @@
         <label>oauthToken</label>
         <mandatory>false</mandatory>
         <max_length>8000</max_length>
-        <model display_value="GetAzAuthorization">c4ad5cc8db7533c00be69ee6db9619a5</model>
+        <model display_value="Get OAuth Token">c4ad5cc8db7533c00be69ee6db9619a5</model>
         <model_id>c4ad5cc8db7533c00be69ee6db9619a5</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_c4ad5cc8db7533c00be69ee6db9619a5</name>

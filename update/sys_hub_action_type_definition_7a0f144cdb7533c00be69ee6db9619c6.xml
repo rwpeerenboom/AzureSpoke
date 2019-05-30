@@ -8,27 +8,53 @@
         <copied_from_name/>
         <description/>
         <internal_name>get_vnet_info</internal_name>
-        <label_cache>[{"name":"{{action.oauthtoken}}","label":"action➛oauthtoken","type":"action","ref":""},{"name":"{{action.subscription}}","label":"action➛subscription","type":"action","ref":""},{"name":"{{action.resource_group}}","label":"action➛resource_group","type":"action","ref":""},{"name":"{{action.vnet}}","label":"action➛vnet","type":"action","ref":""},{"name":"{{step[cfe075ff-8774-4d64-b552-30becbaf4bf7].p}}","label":"step➛Build resource path➛p","type":"step","ref":""},{"name":"{{step[cfe075ff-8774-4d64-b552-30becbaf4bf7].pa}}","label":"step➛Build resource path➛pa","type":"step","ref":""},{"name":"{{step[cfe075ff-8774-4d64-b552-30becbaf4bf7].pat}}","label":"step➛Build resource path➛pat","type":"step","ref":""},{"name":"{{step[cfe075ff-8774-4d64-b552-30becbaf4bf7].path}}","label":"step➛Build resource path➛path","type":"step","ref":""},{"name":"{{step[641f6660-ca76-44cf-b2f9-1a335e4ae00b].response_body}}","label":"step➛Send Request➛Response Body","type":"step","ref":""},{"name":"{{step[641f6660-ca76-44cf-b2f9-1a335e4ae00b].status_code}}","label":"step➛Send Request➛Status Code","type":"step","ref":""},{"name":"{{step[641f6660-ca76-44cf-b2f9-1a335e4ae00b].error_message}}","label":"step➛Send Request➛Error Message","type":"step","ref":""},{"name":"{{step[641f6660-ca76-44cf-b2f9-1a335e4ae00b].error_code}}","label":"step➛Send Request➛Error Code","type":"step","ref":""}]</label_cache>
-        <latest_snapshot>e37af800db3933c00be69ee6db961984</latest_snapshot>
+        <label_cache>[{"name":"{{action.oauthtoken}}","label":"action➛oauthtoken","type":"action","ref":""},{"name":"{{action.network}}","label":"action➛network","type":"action","ref":"cmdb_ci_network"},{"name":"{{action.network.object_id}}","label":"action➛network➛Object ID","type":"action","ref":""},{"name":"{{step[cfe075ff-8774-4d64-b552-30becbaf4bf7].p}}","label":"step➛Build resource path➛p","type":"step","ref":""},{"name":"{{step[cfe075ff-8774-4d64-b552-30becbaf4bf7].pa}}","label":"step➛Build resource path➛pa","type":"step","ref":""},{"name":"{{step[cfe075ff-8774-4d64-b552-30becbaf4bf7].pat}}","label":"step➛Build resource path➛pat","type":"step","ref":""},{"name":"{{step[cfe075ff-8774-4d64-b552-30becbaf4bf7].path}}","label":"step➛Build resource path➛path","type":"step","ref":""},{"name":"{{step[641f6660-ca76-44cf-b2f9-1a335e4ae00b].response_body}}","label":"step➛Send Request➛Response Body","type":"step","ref":""},{"name":"{{step[641f6660-ca76-44cf-b2f9-1a335e4ae00b].status_code}}","label":"step➛Send Request➛Status Code","type":"step","ref":""},{"name":"{{step[641f6660-ca76-44cf-b2f9-1a335e4ae00b].error_message}}","label":"step➛Send Request➛Error Message","type":"step","ref":""},{"name":"{{step[641f6660-ca76-44cf-b2f9-1a335e4ae00b].error_code}}","label":"step➛Send Request➛Error Code","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].s}}","label":"step➛Handle Response➛s","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].st}}","label":"step➛Handle Response➛st","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].sta}}","label":"step➛Handle Response➛sta","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].stat}}","label":"step➛Handle Response➛stat","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].statu}}","label":"step➛Handle Response➛statu","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].status}}","label":"step➛Handle Response➛status","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].e}}","label":"step➛Handle Response➛e","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].er}}","label":"step➛Handle Response➛er","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].err}}","label":"step➛Handle Response➛err","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].erro}}","label":"step➛Handle Response➛erro","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].error}}","label":"step➛Handle Response➛error","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].errorM}}","label":"step➛Handle Response➛errorM","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].errorMe}}","label":"step➛Handle Response➛errorMe","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].errorMes}}","label":"step➛Handle Response➛errorMes","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].errorMess}}","label":"step➛Handle Response➛errorMess","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].errorMessa}}","label":"step➛Handle Response➛errorMessa","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].errorMessag}}","label":"step➛Handle Response➛errorMessag","type":"step","ref":""},{"name":"{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].errorMessage}}","label":"step➛Handle Response➛errorMessage","type":"step","ref":""}]</label_cache>
+        <latest_snapshot>ef2c3904db7d33c00be69ee6db9619a2</latest_snapshot>
         <master_snapshot>71986c88dbb533c00be69ee6db9619f9</master_snapshot>
         <name>Get VNet Info</name>
+        <outputs/>
         <outputs/>
         <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-28 16:52:49</sys_created_on>
         <sys_id>7a0f144cdb7533c00be69ee6db9619c6</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>22</sys_mod_count>
         <sys_name>Get VNet Info</sys_name>
         <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
         <sys_policy/>
         <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_7a0f144cdb7533c00be69ee6db9619c6</sys_update_name>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-28 18:52:50</sys_updated_on>
+        <sys_updated_on>2019-05-28 23:39:51</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
     <sys_translated_text action="delete_multiple" query="documentkey=7a0f144cdb7533c00be69ee6db9619c6"/>
     <sys_variable_value action="delete_multiple" query="document_key=7a0f144cdb7533c00be69ee6db9619c6"/>
+    <sys_element_mapping action="delete_multiple" query="id=7a0f144cdb7533c00be69ee6db9619c6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>errormessage</field>
+        <id>7a0f144cdb7533c00be69ee6db9619c6</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-28 23:34:34</sys_created_on>
+        <sys_id>c40bfd80db7d33c00be69ee6db9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-28 23:34:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7a0f144cdb7533c00be69ee6db9619c6</table>
+        <value>{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].errorMessage}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>7a0f144cdb7533c00be69ee6db9619c6</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-05-28 23:34:34</sys_created_on>
+        <sys_id>880bfd80db7d33c00be69ee6db9619dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-05-28 23:34:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7a0f144cdb7533c00be69ee6db9619c6</table>
+        <value>{{step[d7241a1a-da5a-4dd6-8e21-181106fedb34].status}}</value>
+    </sys_element_mapping>
 </record_update>
