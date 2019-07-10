@@ -15,14 +15,14 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-28 17:34:32</sys_created_on>
         <sys_id>0298ac88dbb533c00be69ee6db961956</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Build resource path</sys_name>
         <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
         <sys_policy/>
         <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
         <sys_update_name>sys_hub_step_instance_0298ac88dbb533c00be69ee6db961956</sys_update_name>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-28 23:39:50</sys_updated_on>
+        <sys_updated_on>2019-06-12 20:39:38</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=0298ac88dbb533c00be69ee6db961956"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -77,11 +77,11 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-28 23:28:50</sys_created_on>
         <sys_id>b3a93140db7d33c00be69ee6db961936</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-28 23:39:50</sys_updated_on>
+        <sys_updated_on>2019-06-12 20:39:38</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_0298ac88dbb533c00be69ee6db961956</table>
-        <value>{{action.network.object_id}}</value>
+        <value>{{action.network}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_group</field>

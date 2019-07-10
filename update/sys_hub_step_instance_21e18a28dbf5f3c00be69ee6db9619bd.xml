@@ -15,14 +15,14 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-30 13:21:41</sys_created_on>
         <sys_id>21e18a28dbf5f3c00be69ee6db9619bd</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>6</sys_mod_count>
         <sys_name>Build resource path</sys_name>
         <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
         <sys_policy/>
         <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
         <sys_update_name>sys_hub_step_instance_21e18a28dbf5f3c00be69ee6db9619bd</sys_update_name>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-30 13:26:53</sys_updated_on>
+        <sys_updated_on>2019-06-12 19:43:06</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=21e18a28dbf5f3c00be69ee6db9619bd"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -47,9 +47,9 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-30 13:21:42</sys_created_on>
         <sys_id>fde18a28dbf5f3c00be69ee6db9619d4</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-30 13:26:53</sys_updated_on>
+        <sys_updated_on>2019-06-12 19:43:06</sys_updated_on>
         <value>(function execute(inputs, outputs) {
   
   	var path = inputs.vnet1;
@@ -104,10 +104,10 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-30 13:21:42</sys_created_on>
         <sys_id>79e18a28dbf5f3c00be69ee6db9619d5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-30 13:21:42</sys_updated_on>
+        <sys_updated_on>2019-06-12 19:38:14</sys_updated_on>
         <table>var__m_sys_hub_step_ext_input_21e18a28dbf5f3c00be69ee6db9619bd</table>
-        <value>{{action.vnet1.object_id}}</value>
+        <value>{{action.vnet1}}</value>
     </sys_element_mapping>
 </record_update>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_plan">
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Resource Info">06b69793dbc2f3002f44d49fdf961950</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"cd6fdbdfdbc2f3002f44d49fdf9619ec","name":"plan"}}</plan>
+        <snapshot>d44fd3dfdbc2f3002f44d49fdf9619bb</snapshot>
+        <sys_class_name>sys_hub_action_plan</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 19:29:09</sys_created_on>
+        <sys_id>cd6fdbdfdbc2f3002f44d49fdf9619ec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>06b69793dbc2f3002f44d49fdf961950</sys_name>
+        <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
+        <sys_update_name>sys_hub_action_plan_cd6fdbdfdbc2f3002f44d49fdf9619ec</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 19:29:09</sys_updated_on>
+    </sys_hub_action_plan>
+</record_update>

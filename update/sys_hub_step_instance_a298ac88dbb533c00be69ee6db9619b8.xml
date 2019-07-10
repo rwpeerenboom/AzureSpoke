@@ -15,14 +15,14 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-28 17:34:34</sys_created_on>
         <sys_id>a298ac88dbb533c00be69ee6db9619b8</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name>Send Request</sys_name>
         <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
         <sys_policy/>
         <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
         <sys_update_name>sys_hub_step_instance_a298ac88dbb533c00be69ee6db9619b8</sys_update_name>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-28 23:33:30</sys_updated_on>
+        <sys_updated_on>2019-06-12 20:39:39</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=a298ac88dbb533c00be69ee6db9619b8"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -89,10 +89,10 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-28 17:37:22</sys_created_on>
         <sys_id>e339acc8dbb533c00be69ee6db961961</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-28 18:21:27</sys_updated_on>
-        <value>{"api-version":"2018-11-01"}</value>
+        <sys_updated_on>2019-06-12 20:39:39</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{},"name":"api-version","value":"2018-11-01"}]}</value>
         <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -164,11 +164,11 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-28 17:34:34</sys_created_on>
         <sys_id>6698ac88dbb533c00be69ee6db9619e0</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-28 17:37:22</sys_updated_on>
+        <sys_updated_on>2019-06-12 20:39:39</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"Authorization":"{{action.oauthtoken}}"}</value>
+        <value>{"type":"ADV_NV","value":[{"name":"Authorization","value":"{{action.oauthtoken}}","attributes":{}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>query_params</field>

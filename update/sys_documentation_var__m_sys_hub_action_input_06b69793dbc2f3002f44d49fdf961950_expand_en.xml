@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="expand" label="expand" language="en" table="var__m_sys_hub_action_input_06b69793dbc2f3002f44d49fdf961950">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>expand</element>
+            <help/>
+            <hint/>
+            <label>expand</label>
+            <language>en</language>
+            <name>var__m_sys_hub_action_input_06b69793dbc2f3002f44d49fdf961950</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>nick.ryan</sys_created_by>
+            <sys_created_on>2019-06-20 18:55:11</sys_created_on>
+            <sys_id>a3975317dbc2f3002f44d49fdf961997</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>expand</sys_name>
+            <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
+            <sys_update_name>sys_documentation_var__m_sys_hub_action_input_06b69793dbc2f3002f44d49fdf961950_expand_en</sys_update_name>
+            <sys_updated_by>nick.ryan</sys_updated_by>
+            <sys_updated_on>2019-06-20 18:55:11</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

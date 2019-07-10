@@ -9,6 +9,7 @@
         <client_id>566272cb-3d21-4525-9e47-b25bd756f0e3</client_id>
         <client_secret>sulBhJcx9koMGGSfD47djJy9ScGuZcHmzB39ce2os1l7MaSa+EyjGA==</client_secret>
         <client_uuid>e9453512dbe5b7800be69ee6db961973</client_uuid>
+        <code_challenge_method/>
         <comments/>
         <default_grant_type>client_credentials</default_grant_type>
         <id_token_lifespan>0</id_token_lifespan>
@@ -17,10 +18,12 @@
         <name>Azure SC Lab</name>
         <oauth_api_script/>
         <protocol_name/>
+        <public_client>false</public_client>
         <redirect_url>https://nryansc01.service-now.com/oauth_redirect.do</redirect_url>
         <refresh_token_lifespan>8640000</refresh_token_lifespan>
         <revoke_token_url/>
         <salt>0</salt>
+        <skip_authorize>false</skip_authorize>
         <sys_class_name>oauth_entity</sys_class_name>
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-23 12:44:40</sys_created_on>

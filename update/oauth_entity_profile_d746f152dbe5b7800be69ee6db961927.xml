@@ -2,6 +2,7 @@
     <oauth_entity_profile action="INSERT_OR_UPDATE">
         <default>true</default>
         <grant_type>client_credentials</grant_type>
+        <jwt_provider/>
         <name>Azure SC Lab default_profile</name>
         <oauth_entity display_value="Azure SC Lab">c2453512dbe5b7800be69ee6db96199e</oauth_entity>
         <sys_class_name>oauth_entity_profile</sys_class_name>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_action_type_snapshot">
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category display_value="Resources">37861793dbc2f3002f44d49fdf96199b</category>
+        <copied_from/>
+        <copied_from_name/>
+        <description>GET https://management.azure.com/subscriptions/{subscriptionId}/resources?$filter={$filter}&amp;amp;$expand={$expand}&amp;amp;$top={$top}&amp;amp;api-version=2019-05-01
+
+Can provide filter and limit to results</description>
+        <internal_name>get_resource_info</internal_name>
+        <label_cache>[{"name":"{{action.subscription}}","label":"action➛subscription","type":"action","ref":""},{"name":"{{action.filter}}","label":"action➛filter","type":"action","ref":""},{"name":"{{action.expand}}","label":"action➛expand","type":"action","ref":""},{"name":"{{action.top}}","label":"action➛top","type":"action","ref":""},{"name":"{{action.oauthtoken}}","label":"action➛oauthToken","type":"action","ref":""},{"name":"{{step[8fa4b584-f2cb-41bb-8686-5e7f76b530ed].p}}","label":"step➛Build Path➛p","type":"step","ref":""},{"name":"{{step[8fa4b584-f2cb-41bb-8686-5e7f76b530ed].pa}}","label":"step➛Build Path➛pa","type":"step","ref":""},{"name":"{{step[8fa4b584-f2cb-41bb-8686-5e7f76b530ed].pat}}","label":"step➛Build Path➛pat","type":"step","ref":""},{"name":"{{step[8fa4b584-f2cb-41bb-8686-5e7f76b530ed].path}}","label":"step➛Build Path➛path","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].status}}","label":"step➛Handle Response➛status","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].e}}","label":"step➛Handle Response➛e","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].er}}","label":"step➛Handle Response➛er","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].err}}","label":"step➛Handle Response➛err","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].erro}}","label":"step➛Handle Response➛erro","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].error}}","label":"step➛Handle Response➛error","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].errorM}}","label":"step➛Handle Response➛errorM","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].errorMe}}","label":"step➛Handle Response➛errorMe","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].errorMes}}","label":"step➛Handle Response➛errorMes","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].errorMess}}","label":"step➛Handle Response➛errorMess","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].errorMessa}}","label":"step➛Handle Response➛errorMessa","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].errorMessag}}","label":"step➛Handle Response➛errorMessag","type":"step","ref":""},{"name":"{{step[916d25f2-7487-46a1-b173-772a066222e7].errorMessage}}","label":"step➛Handle Response➛errorMessage","type":"step","ref":""}]</label_cache>
+        <master>true</master>
+        <name>Get Resource Info</name>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Resource Info">06b69793dbc2f3002f44d49fdf961950</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 19:28:49</sys_created_on>
+        <sys_id>185fd7dfdbc2f3002f44d49fdf961955</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Get Resource Info</sys_name>
+        <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
+        <sys_update_name>sys_hub_action_type_snapshot_185fd7dfdbc2f3002f44d49fdf961955</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 19:29:06</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=185fd7dfdbc2f3002f44d49fdf961955"/>
+    <sys_variable_value action="delete_multiple" query="document_key=185fd7dfdbc2f3002f44d49fdf961955"/>
+    <sys_element_mapping action="delete_multiple" query="id=185fd7dfdbc2f3002f44d49fdf961955"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>errormessage</field>
+        <id>185fd7dfdbc2f3002f44d49fdf961955</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 19:29:07</sys_created_on>
+        <sys_id>a06f9bdfdbc2f3002f44d49fdf9619fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 19:29:07</sys_updated_on>
+        <table>var__m_sys_hub_action_output_185fd7dfdbc2f3002f44d49fdf961955</table>
+        <value>{{step[916d25f2-7487-46a1-b173-772a066222e7].errorMessage}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>status</field>
+        <id>185fd7dfdbc2f3002f44d49fdf961955</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 19:29:07</sys_created_on>
+        <sys_id>646f9bdfdbc2f3002f44d49fdf9619fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 19:29:07</sys_updated_on>
+        <table>var__m_sys_hub_action_output_185fd7dfdbc2f3002f44d49fdf961955</table>
+        <value>{{step[916d25f2-7487-46a1-b173-772a066222e7].status}}</value>
+    </sys_element_mapping>
+</record_update>

@@ -15,14 +15,14 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-30 14:12:03</sys_created_on>
         <sys_id>936dc6acdb39f3c00be69ee6db961950</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Delete Peering</sys_name>
         <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
         <sys_policy/>
         <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
         <sys_update_name>sys_hub_step_instance_936dc6acdb39f3c00be69ee6db961950</sys_update_name>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-30 14:12:03</sys_updated_on>
+        <sys_updated_on>2019-06-17 18:58:28</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=936dc6acdb39f3c00be69ee6db961950"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -33,10 +33,10 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-30 14:12:03</sys_created_on>
         <sys_id>276dc6acdb39f3c00be69ee6db961962</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-30 14:12:03</sys_updated_on>
-        <value>{"api-version":"2018-11-01"}</value>
+        <sys_updated_on>2019-06-17 18:58:28</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[{"attributes":{},"name":"api-version","value":"2018-11-01"}]}</value>
         <variable display_value="">4328e2fb47222200b4fad7527c9a7164</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -192,11 +192,11 @@
         <sys_created_by>nick.ryan</sys_created_by>
         <sys_created_on>2019-05-30 14:12:03</sys_created_on>
         <sys_id>676dc6acdb39f3c00be69ee6db96195f</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>nick.ryan</sys_updated_by>
-        <sys_updated_on>2019-05-30 14:12:03</sys_updated_on>
+        <sys_updated_on>2019-06-17 18:58:28</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"Authorization":"{{action.oauthtoken}}"}</value>
+        <value>{"type":"ADV_NV","value":[{"name":"Authorization","value":"{{action.oauthtoken}}","attributes":{}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>http_method</field>

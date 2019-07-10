@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_hub_step_instance">
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Resource Info">06b69793dbc2f3002f44d49fdf961950</action>
+        <cid>8fa4b584-f2cb-41bb-8686-5e7f76b530ed</cid>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Build Path</label>
+        <order>1</order>
+        <outputs/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_class_name>sys_hub_step_instance</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 18:55:12</sys_created_on>
+        <sys_id>ff975317dbc2f3002f44d49fdf9619be</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Build Path</sys_name>
+        <sys_package display_value="Azure Resource Spoke" source="x_snc_azure_resour">22283859db993f401e2b7646bf9619b8</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Azure Resource Spoke">22283859db993f401e2b7646bf9619b8</sys_scope>
+        <sys_update_name>sys_hub_step_instance_ff975317dbc2f3002f44d49fdf9619be</sys_update_name>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 19:05:29</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ff975317dbc2f3002f44d49fdf9619be"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff975317dbc2f3002f44d49fdf9619be</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 18:55:19</sys_created_on>
+        <sys_id>b9a7d317dbc2f3002f44d49fdf9619f9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 19:05:29</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+	var path = 'https://management.azure.com/subscriptions/';
+    
+    path = path + inputs.subscription + '/resources?';
+  
+  	if (inputs.filter)
+      	path = path + '$filter={$' + inputs.filter + '&amp;';
+  
+  	if (inputs.expand)
+      	path = path + '$expand={$' + inputs.expand + '&amp;';
+  
+  	if (inputs.top)
+      	path = path + '$top={$' + inputs.top + '&amp;';
+  
+  	path = path + 'api-version=2019-05-01';
+  
+  	outputs.path = path;
+})(inputs, outputs);
+</value>
+        <variable display_value="">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ff975317dbc2f3002f44d49fdf9619be</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 18:55:19</sys_created_on>
+        <sys_id>f1a7d317dbc2f3002f44d49fdf9619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 18:55:19</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ff975317dbc2f3002f44d49fdf9619be"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>ff975317dbc2f3002f44d49fdf9619be</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 18:55:19</sys_created_on>
+        <sys_id>39a7d317dbc2f3002f44d49fdf9619f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 18:55:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>expand</field>
+        <id>ff975317dbc2f3002f44d49fdf9619be</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 18:55:19</sys_created_on>
+        <sys_id>79a7d317dbc2f3002f44d49fdf9619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 18:55:19</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ff975317dbc2f3002f44d49fdf9619be</table>
+        <value>{{action.expand}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>filter</field>
+        <id>ff975317dbc2f3002f44d49fdf9619be</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 18:55:19</sys_created_on>
+        <sys_id>b5a7d317dbc2f3002f44d49fdf9619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 18:55:19</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ff975317dbc2f3002f44d49fdf9619be</table>
+        <value>{{action.filter}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>ff975317dbc2f3002f44d49fdf9619be</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 18:55:19</sys_created_on>
+        <sys_id>71a7d317dbc2f3002f44d49fdf9619f9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 18:55:19</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>subscription</field>
+        <id>ff975317dbc2f3002f44d49fdf9619be</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 18:55:19</sys_created_on>
+        <sys_id>3da7d317dbc2f3002f44d49fdf9619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 18:55:19</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ff975317dbc2f3002f44d49fdf9619be</table>
+        <value>{{action.subscription}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>top</field>
+        <id>ff975317dbc2f3002f44d49fdf9619be</id>
+        <sys_created_by>nick.ryan</sys_created_by>
+        <sys_created_on>2019-06-20 18:55:19</sys_created_on>
+        <sys_id>fda7d317dbc2f3002f44d49fdf9619fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>nick.ryan</sys_updated_by>
+        <sys_updated_on>2019-06-20 18:55:19</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_ff975317dbc2f3002f44d49fdf9619be</table>
+        <value>{{action.top}}</value>
+    </sys_element_mapping>
+</record_update>
